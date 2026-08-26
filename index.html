@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 响应式关键，适配手机与PC -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>个人在线简历</title>
+  <!-- 引入Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 图标库 Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e293b',
+          },
+        },
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .card-shadow {
+        @apply shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-primary">
+  <div class="max-w-4xl mx-auto px-4 py-8 sm:py-12">
+    <!-- 头部个人基础信息 -->
+    <header class="bg-white rounded-xl p-6 sm:p-8 card-shadow mb-8">
+      <div class="sm:flex items-center justify-between">
+        <div>
+          <h1 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold">甄智宇</h1>
+          <p class="text-lg text-slate-600 mt-2">河南财经政法大学｜金融学（大一）</p>
+        </div>
+        <div class="mt-4 sm:mt-0 space-y-2 text-slate-600">
+          <p><i class="fa fa-envelope mr-2"></i>3294995700@qq.com</p>
+          <p><i class="fa fa-phone mr-2"></i>18226201828</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 教育背景 -->
+    <section class="bg-white rounded-xl p-6 sm:p-8 card-shadow mb-8">
+      <h2 class="text-xl font-bold border-l‑4 border‑primary pl‑3 mb‑4"><i class="fa fa‑graduation‑cap mr‑2"></i>教育背景</h2>
+      <div class="space‑y‑3">
+        <div>
+          <div class="flex justify-between flex-wrap">
+            <span class="font-semibold">河南财经政法大学 | 金融学</span>
+            <span class="text-slate‑500">2026‑09 ~ 至今</span>
+          </div>
+          <p class="text‑slate‑600 mt‑1">本科在读；目标：保研中国政法大学金融法方向</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section class="bg-white rounded-xl p‑6 sm:p‑8 card‑shadow mb‑8">
+      <h2 class="text‑xl font‑bold mb‑4"><i class="fa‑fa‑cogs mr‑2"></i>专业技能</h2>
+      <div class="grid sm:grid‑cols‑2 gap‑3">
+        <div class="bg‑slate‑50 p‑3 rounded‑lg">Python（网页爬虫基础）</div>
+        <div class="bg‑slate‑50 p‑3 rounded‑lg">金融专业基础学习</div>
+        <div class="bg‑slate‑50 p‑3 rounded‑lg">IELTS备考、大学英语四级备考</div>
+        <div class="bg‑slate‑50 p‑3 rounded‑lg">HTML / Tailwind CSS基础</div>
+      </div>
+    </section>
+
+    <!-- 项目/实践经历 -->
+    <section class="bg‑white rounded‑xl p‑6 sm:p‑8 card‑shadow mb‑8">
+      <h2 class="text‑xl font‑bold mb‑4"><i class="fa‑fa‑folder‑open mr‑2"></i>项目与实践经历</h2>
+      <div class="space‑y‑4">
+        <div>
+          <div class="font‑semibold">Python网页爬虫课程学习项目</div>
+          <p class="text‑slate‑600 mt‑1">学习网页数据抓取基础，练习数据获取，服务金融法方向科研数据收集。</p>
+        </div>
+        <div>
+          <div class="font‑semibold">学业规划项目</div>
+          <p class="text‑slate‑600 mt‑1">制定本科阶段保研规划，梳理竞赛、科研、证书学习路线。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 个人特长与爱好 -->
+    <section class="bg‑white rounded‑xl p‑6 sm:p‑8 card‑shadow mb‑8">
+      <h2 class="text‑xl font‑bold mb‑4"><i class="fa‑fa‑heart mr‑2"></i>乒乓球、羽毛球</h2>
+      <p class="text‑slate‑700">金融与法律交叉领域阅读、自学编程、规划学习、思考复盘。</p>
+    </section>
+
+    <footer class="text‑center text‑slate‑500 text‑sm pt‑4">
+      更新时间：2026‑08‑26
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+/* 纸张<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
@@ -38,8 +39,7 @@ body{
   color:var(--ink);
   line-height:1.75;
   -webkit-font-size-adjust:100%;
-}
-/* 纸张细纹 */
+}细纹 */
 body::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
   background-image:radial-gradient(circle,rgba(22,35,58,.035) 1px,transparent 1px);
@@ -47,7 +47,6 @@ body::before{
 }
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-
 /* ---------- 顶部导航 ---------- */
 .topnav{
   position:sticky;top:0;z-index:60;
@@ -76,7 +75,6 @@ img{max-width:100%;display:block}
   font-family:var(--sans);transition:all .2s;letter-spacing:1px;
 }
 .print-btn:hover{background:var(--gold);color:#0E1728}
-
 /* ---------- 头部 ---------- */
 .hero{
   position:relative;background:
@@ -126,14 +124,12 @@ img{max-width:100%;display:block}
 .hero-contact{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;font-size:14px;color:#C6CBD6}
 .hero-contact span{display:inline-flex;align-items:center;gap:8px}
 .hero-contact svg{width:15px;height:15px;stroke:var(--gold-light);fill:none;stroke-width:1.8}
-
 /* ---------- 主体两栏 ---------- */
 .layout{
   position:relative;z-index:1;
   max-width:1180px;margin:0 auto;padding:44px 20px 20px;
   display:grid;grid-template-columns:330px 1fr;gap:34px;align-items:start;
 }
-
 /* ---------- 通用区块 ---------- */
 .side-card{
   background:var(--card);border:1px solid var(--line);border-radius:6px;
@@ -149,7 +145,6 @@ img{max-width:100%;display:block}
   content:"";width:5px;height:18px;background:var(--gold);border-radius:1px;flex:none;
 }
 .side-card.dark .sec-title{color:#F5EFE0}
-
 /* ---------- 侧栏：教育 ---------- */
 .edu-school{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.5}
 .edu-meta{font-size:13.5px;color:var(--ink-soft);margin-top:4px}
@@ -160,7 +155,6 @@ img{max-width:100%;display:block}
 .side-card.dark .edu-school{color:#F5EFE0}
 .side-card.dark .edu-meta{color:#AEB6C6}
 .side-card.dark .edu-goal{background:rgba(217,180,92,.12);color:#E8D9AE}
-
 /* ---------- 侧栏：技能条 ---------- */
 .skill{margin-bottom:14px}
 .skill:last-child{margin-bottom:0}
@@ -175,7 +169,6 @@ img{max-width:100%;display:block}
 .lang-item{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
 .lang-item:last-child{border-bottom:none}
 .lang-item .status{color:var(--gold);font-size:12.5px}
-
 /* ---------- 侧栏：证书 ---------- */
 .cert-list{list-style:none}
 .cert-list li{
@@ -203,7 +196,6 @@ img{max-width:100%;display:block}
   background:rgba(22,35,58,.75);color:#EFE6C8;font-size:12px;
   display:flex;align-items:center;justify-content:center;
 }
-
 /* ---------- 侧栏：兴趣爱好 ---------- */
 .hobby{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line)}
 .hobby:last-child{border-bottom:none}
@@ -214,7 +206,6 @@ img{max-width:100%;display:block}
 }
 .hobby b{font-size:14px;display:block}
 .hobby span{font-size:12.5px;color:var(--muted)}
-
 /* ---------- 主栏 ---------- */
 .main-sec{margin-bottom:38px}
 .main-head{
@@ -226,15 +217,12 @@ img{max-width:100%;display:block}
 }
 .main-head h2{font-family:var(--serif);font-size:clamp(21px,3vw,26px);letter-spacing:4px}
 .main-head .sub{font-size:11px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-left:auto}
-
 /* 自我陈述 */
 .statement{
   background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
   border-radius:0 6px 6px 0;padding:22px 26px;font-size:15px;color:#333A46;
 }
 .statement p+p{margin-top:10px}
-.statement mark{background:var(--gold-pale);color:#6B5314;padding:0 4px;border-radius:2px}
-
 /* ---------- 时间线 ---------- */
 .timeline{position:relative;padding-left:26px}
 .timeline::before{
@@ -268,13 +256,6 @@ img{max-width:100%;display:block}
   font-style:normal;font-size:11.5px;color:var(--ink-soft);
   background:#EFECE3;border:1px solid var(--line);padding:2px 10px;border-radius:3px;letter-spacing:.5px;
 }
-/* 新增示例条目标记（改完可整段删除 class="sample"） */
-.sample .tl-head h3::after,.sample-card h3::after{
-  content:"示例 · 待改";font-size:11px;color:#A2542B;background:#F9E8DA;
-  border:1px solid #E4C4A8;padding:1px 8px;border-radius:999px;margin-left:10px;
-  font-family:var(--sans);letter-spacing:1px;vertical-align:2px;
-}
-
 /* ---------- 项目卡片 ---------- */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .proj-card{
@@ -304,7 +285,6 @@ img{max-width:100%;display:block}
   font-style:normal;font-size:11.5px;background:var(--ink);color:#EFE6C8;
   padding:2px 10px;border-radius:2px;letter-spacing:1px;
 }
-
 /* ---------- 保研路线图 ---------- */
 .roadmap{
   background:linear-gradient(150deg,var(--ink-deep),var(--ink) 70%,#20304F);
@@ -325,14 +305,12 @@ img{max-width:100%;display:block}
 .rm-step .yr::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
 .rm-step b{font-size:14.5px;display:block;margin-bottom:5px;color:#F1ECDE;font-weight:700}
 .rm-step span{font-size:12.5px;color:#B4BAC8;line-height:1.7;display:block}
-
 /* ---------- 页脚 ---------- */
 footer{
   max-width:1180px;margin:0 auto;padding:26px 20px 40px;
   border-top:1px solid var(--line);display:flex;justify-content:space-between;
   font-size:12.5px;color:var(--muted);flex-wrap:wrap;gap:8px;position:relative;z-index:1;
 }
-
 /* ---------- 灯箱 ---------- */
 .lightbox{
   position:fixed;inset:0;background:rgba(14,23,40,.9);z-index:100;
@@ -344,11 +322,9 @@ footer{
 .lightbox .close{
   position:absolute;top:22px;right:28px;font-size:26px;color:#EFE6C8;cursor:pointer;line-height:1;
 }
-
 /* ---------- 入场动画 ---------- */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
-.reveal.on{opacity:1;transform:none}
-
+.reveal.on{opacity:1!important;transform:none}
 /* ---------- 响应式 ---------- */
 @media(max-width:960px){
   .layout{grid-template-columns:1fr;gap:8px}
@@ -364,7 +340,6 @@ footer{
   .rm-grid{grid-template-columns:1fr}
   .main-head .sub{display:none}
 }
-
 /* ---------- 打印 ---------- */
 @media print{
   body{background:#fff}
@@ -380,7 +355,6 @@ footer{
 </style>
 </head>
 <body>
-
 <!-- ============ 顶部导航 ============ -->
 <nav class="topnav">
   <div class="in">
@@ -396,7 +370,6 @@ footer{
     <button class="print-btn" onclick="window.print()">打印 / 存 PDF</button>
   </div>
 </nav>
-
 <!-- ============ 头部 ============ -->
 <header class="hero">
   <div class="in">
@@ -414,40 +387,34 @@ footer{
         <span class="en-name">Zhen Zhiyu</span>
       </div>
       <p class="tagline">
-        河南财经政法大学 · 金融学本科在读（2026 级）。
-        以 <b>「金融 × 法律」交叉方向</b>为长期目标，正在用<b>编程与数据能力</b>武装自己——
-        一边打牢金融专业基础，一边自学 Python 与网页技术，稳步走向金融法复合路线。
+        河南财经政法大学2026级金融学大一。我希望未来往金融与法律交叉方向发展，所以除专业课之外，我自学Python和网页制作，想掌握一点数据处理能力，为之后的学习做准备。
       </p>
       <div class="chips">
         <span class="chip">金融学</span>
         <span class="chip">金融法方向</span>
         <span class="chip">Python / 数据获取</span>
-        <span class="chip">长期规划主义者</span>
       </div>
       <div class="hero-contact">
         <span>
-          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
           3294995700@qq.com
         </span>
         <span>
-          <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" /></svg>
           18226201828
         </span>
         <span>
-          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
           河南 · 郑州
         </span>
       </div>
     </div>
   </div>
 </header>
-
 <!-- ============ 主体 ============ -->
 <div class="layout">
-
   <!-- ======== 左侧栏 ======== -->
   <aside>
-
     <!-- 教育背景（真实信息，完整保留） -->
     <section class="side-card dark reveal" id="edu">
       <h2 class="sec-title">教育背景</h2>
@@ -455,11 +422,10 @@ footer{
       <div class="edu-meta">金融学院 · 金融学（本科在读）</div>
       <div class="edu-meta">2026.09 — 至今 · 大一</div>
       <div class="edu-goal">
-        目标：保研至 <b>中国政法大学 · 金融法方向</b><br/>
+        目标：保研至 <b>中国政法大学 · 金融法方向</b><br />
         主线：专业课绩点 + 英语能力 + 科研数据技能
       </div>
     </section>
-
     <!-- 专业技能（真实信息，完整保留） -->
     <section class="side-card reveal" id="skills">
       <h2 class="sec-title">专业技能</h2>
@@ -479,13 +445,11 @@ footer{
         <div class="row"><span>学业规划 / 复盘方法论</span><span class="lvl">熟练</span></div>
         <div class="bar"><i data-w="75"></i></div>
       </div>
-
       <h2 class="sec-title" style="margin-top:24px">语言能力</h2>
       <div class="lang-item"><span>普通话</span><span class="status">母语</span></div>
       <div class="lang-item"><span>英语 · CET-4</span><span class="status">备考中</span></div>
       <div class="lang-item"><span>英语 · IELTS</span><span class="status">长线备考</span></div>
     </section>
-
     <!-- 证书（真实信息，完整保留；图片可后补） -->
     <section class="side-card reveal" id="certs">
       <h2 class="sec-title">竞赛与证书</h2>
@@ -500,16 +464,15 @@ footer{
       <!-- 证书图片：picture1.jpg / picture2.jpg 放同目录即显示，点击可放大 -->
       <div class="cert-thumbs">
         <div class="thumb" onclick="openLb('picture1.jpg','RST 竞赛训练营 · 证书 1')">
-          <img src="picture1.jpg" alt="证书1" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 1<br/>(picture1.jpg)</div>')" />
+          <img src="picture1.jpg" alt="证书1" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 1<br />(picture1.jpg)</div>')" />
           <span class="zoom">⤢</span>
         </div>
         <div class="thumb" onclick="openLb('picture2.jpg','RST 竞赛训练营 · 证书 2')">
-          <img src="picture2.jpg" alt="证书2" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 2<br/>(picture2.jpg)</div>')" />
+          <img src="picture2.jpg" alt="证书2" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 2<br />(picture2.jpg)</div>')" />
           <span class="zoom">⤢</span>
         </div>
       </div>
     </section>
-
     <!-- 兴趣爱好（真实信息，完整保留） -->
     <section class="side-card reveal">
       <h2 class="sec-title">兴趣与爱好</h2>
@@ -531,10 +494,8 @@ footer{
       </div>
     </section>
   </aside>
-
   <!-- ======== 右侧主栏 ======== -->
   <main>
-
     <!-- 01 自我陈述 -->
     <section class="main-sec reveal" id="profile">
       <div class="main-head">
@@ -542,25 +503,19 @@ footer{
       </div>
       <div class="statement">
         <p>
-          我是甄智宇，河南财经政法大学金融学专业 2026 级本科生。入学之初，我便为自己锚定了
-          <mark>「保研中国政法大学金融法方向」</mark>的长期目标——金融与法律的交叉地带，
-          既需要扎实的金融专业功底，也需要严谨的法律思维，更需要<mark>数据与研究能力</mark>作为支撑。
+          我是甄智宇，2026级金融学大一。刚入学我就定下目标，希望未来可以保研到中国政法大学金融法方向。
         </p>
         <p>
-          围绕这一目标，我以「专业课程 + 英语能力 + 编程工具」三条线并行推进：
-          课内打牢金融学基础；课外自学 Python 网络爬虫、完成 Pygame 游戏项目并制作个人简历网站；
-          同时长线备考 IELTS 与 CET-4。我相信大一的每一步积累，都是在为三年后的推免资格铺路。
+          金融和法律结合的方向，不光要学好本专业，还需要逻辑思维和处理数据的本事。所以我现在同时推进几件事：学好课内专业课；课外自学Python，写过小游戏，也动手做了这个个人网页；同时准备四级，长线规划雅思。大一先一点点积累，为之后做准备。
         </p>
       </div>
     </section>
-
     <!-- 02 经历时间线 -->
     <section class="main-sec reveal" id="timeline">
       <div class="main-head">
         <span class="no">贰</span><h2>经历时间线</h2><span class="sub">Experience</span>
       </div>
       <div class="timeline">
-
         <!-- 真实经历 1：RST 竞赛训练营 -->
         <div class="tl-item hl">
           <div class="tl-head">
@@ -569,13 +524,12 @@ footer{
           </div>
           <div class="tl-org">训练营选拔 · 获筛选赛参与证书</div>
           <ul class="tl-points">
-            <li>通过训练营筛选，系统接触编程与算法基础训练，完成全部课程任务。</li>
-            <li>独立完成附加题项目「坦克大战」，在地图中嵌入个人缩写完成原创身份校验。</li>
-            <li>首次将课堂知识落地为完整可运行的软件作品，建立了「以项目验证学习」的习惯。</li>
+            <li>通过训练营筛选，跟着课程学习编程、算法基础，完成全部课程任务。</li>
+            <li>独立做完附加题坦克大战小游戏，我还在地图里加入自己名字缩写做标记。</li>
+            <li>这是我第一次把学到的代码写成能直接运行的程序，也体会到动手做项目来巩固学习的方式。</li>
           </ul>
-          <div class="tl-tags"><i>Python</i><i>Pygame</i><i>项目实战</i><i>原创校验</i></div>
+          <div class="tl-tags"><i>Python</i><i>Pygame</i><i>项目实战</i></div>
         </div>
-
         <!-- 真实经历 2：Python 爬虫项目 -->
         <div class="tl-item">
           <div class="tl-head">
@@ -584,13 +538,12 @@ footer{
           </div>
           <div class="tl-org">自主学习 · 服务金融法方向科研数据收集</div>
           <ul class="tl-points">
-            <li>系统学习网页数据抓取基础：请求—解析—存储的完整链路。</li>
-            <li>练习公开数据的获取与清洗，为未来金融法方向的实证研究提前储备数据工具。</li>
-            <li>将「金融专业 + 数据技能」组合为个人差异化竞争力。</li>
+            <li>自学网页爬虫相关内容，练习网页请求、内容解析、保存数据的基础操作。</li>
+            <li>尝试抓取公开网页数据并做简单整理。</li>
+            <li>希望以后做金融相关研究时，可以用上这项工具，把金融专业和代码能力结合起来。</li>
           </ul>
-          <div class="tl-tags"><i>Requests</i><i>数据解析</i><i>研究数据储备</i></div>
+          <div class="tl-tags"><i>Requests</i><i>数据解析</i></div>
         </div>
-
         <!-- 真实经历 3：学业规划 -->
         <div class="tl-item">
           <div class="tl-head">
@@ -599,126 +552,57 @@ footer{
           </div>
           <div class="tl-org">个人长期规划项目</div>
           <ul class="tl-points">
-            <li>围绕保研目标，制定大一至大四的分阶段路线：绩点、英语、竞赛、科研、证书五条主线。</li>
-            <li>梳理各类竞赛与科研入门机会，形成可执行的学期级行动清单。</li>
-            <li>定期复盘校准，保证规划不流于纸面。</li>
+            <li>围绕保研目标，我给自己做了大学四年的简单规划，拆分了绩点、英语、竞赛、科研、证书这几个方向。</li>
+            <li>整理了适合本科生参与的竞赛、科研渠道，按学期列好要完成的事情。</li>
+            <li>会定期回头复盘调整计划，避免只是空想。</li>
           </ul>
           <div class="tl-tags"><i>目标管理</i><i>路线拆解</i><i>复盘习惯</i></div>
         </div>
-
-        <!-- ============================================================
-             以下为「结合本人方向补充的示例经历」，非真实经历：
-             确认/修改内容后，删除该条目 class 里的 " sample " 即可去掉
-             「示例 · 待改」角标；不需要的条目直接整段删除即可。
-             ============================================================ -->
-
-        <!-- 示例经历 A：班级事务（待确认修改） -->
-        <div class="tl-item sample">
-          <div class="tl-head">
-            <h3>班级学习委员（拟任 / 待改）</h3>
-            <span class="time">2026—2027</span>
-          </div>
-          <div class="tl-org">金融学院 · 班级事务</div>
-          <ul class="tl-points">
-            <li>组织高等数学、英语四级学习小组，带动班级形成互助学习氛围。</li>
-            <li>汇总整理课程重点与复习资料，服务全班同学期末备考。</li>
-          </ul>
-          <div class="tl-tags"><i>组织协调</i><i>服务同学</i></div>
-        </div>
-
-        <!-- 示例经历 B：社团（待确认修改） -->
-        <div class="tl-item sample">
-          <div class="tl-head">
-            <h3>金融投资协会 / 辩论队 成员（待改）</h3>
-            <span class="time">2026</span>
-          </div>
-          <div class="tl-org">校园社团（请替换为实际社团名称）</div>
-          <ul class="tl-points">
-            <li>参与社团例会与专题分享，跟踪 A 股市场与监管政策动态。</li>
-            <li>在辩论训练中锻炼资料检索与逻辑表达，呼应金融法方向的思维要求。</li>
-          </ul>
-          <div class="tl-tags"><i>市场认知</i><i>逻辑表达</i></div>
-        </div>
-
-        <!-- 示例经历 C：线上课程（待确认修改） -->
-        <div class="tl-item sample">
-          <div class="tl-head">
-            <h3>中国大学 MOOC《Python 网络爬虫》等课程（待改）</h3>
-            <span class="time">2026</span>
-          </div>
-          <div class="tl-org">线上自学（请替换为实际课程名称与平台）</div>
-          <ul class="tl-points">
-            <li>完成课程全部章节与作业，配套实操练习网页数据采集。</li>
-            <li>同步阅读《经济学原理》等金融学入门书目，打好学科底子。</li>
-          </ul>
-          <div class="tl-tags"><i>慕课学习</i><i>自主驱动</i></div>
-        </div>
-
       </div>
     </section>
-
     <!-- 03 项目作品 -->
     <section class="main-sec reveal" id="projects">
       <div class="main-head">
         <span class="no">叁</span><h2>项目作品</h2><span class="sub">Projects</span>
       </div>
       <div class="proj-grid">
-
         <!-- 真实项目 1：坦克大战 -->
         <div class="proj-card">
           <div class="kicker">Game · 训练营附加题</div>
           <h3>坦克大战（Python · Pygame）</h3>
-          <p>独立设计并开发的坦克对战小游戏，从玩法逻辑到碰撞检测全部自主完成。</p>
+          <p>独立写的坦克对战小游戏。</p>
           <ul class="feat">
-            <li>WASD 玩家操控 + 敌方 AI 自动移动与射击</li>
-            <li>完整子弹系统与砖墙碰撞检测</li>
-            <li>血量与胜负判定机制</li>
-            <li>地图内置个人缩写，完成原创身份校验</li>
+            <li>WASD操控玩家，敌方AI自动移动射击</li>
+            <li>实现子弹发射、砖墙碰撞逻辑</li>
+            <li>血量统计和游戏胜负判定</li>
+            <li>地图加入个人缩写作为标记</li>
           </ul>
           <div class="stack"><i>Python</i><i>Pygame</i><i>碰撞检测</i><i>AI 行为</i></div>
         </div>
-
         <!-- 真实项目 2：爬虫 -->
         <div class="proj-card">
           <div class="kicker">Data · 学习项目</div>
           <h3>Python 网页爬虫（数据获取实践）</h3>
-          <p>面向金融法科研数据需求的自学项目，掌握网页数据抓取的基础链路。</p>
+          <p>练习数据采集整理，为之后做金融相关的学习打基础。</p>
           <ul class="feat">
-            <li>请求发送、页面解析与数据存储全流程</li>
-            <li>面向公开数据的采集与整理练习</li>
-            <li>定位：为后续金融法方向的实证研究供给数据</li>
+            <li>练习网页请求、解析、数据存储整套基础操作</li>
+            <li>对公开网页数据做简单采集和整理</li>
           </ul>
           <div class="stack"><i>Python</i><i>Requests</i><i>数据清洗</i></div>
         </div>
-
         <!-- 真实项目 3：学业规划 + 本简历站 -->
         <div class="proj-card">
           <div class="kicker">Plan · 个人长期项目</div>
           <h3>保研路线规划 &amp; 个人简历网站</h3>
-          <p>把「规划能力」和「刚学会的网页技术」各做成一个可见的成果。</p>
+          <p>我把自己的大学规划整理出来，同时用刚学会的HTML+Tailwind写了这份网页简历，这个页面就是我的练习作品。</p>
           <ul class="feat">
-            <li>四年保研路线：竞赛 / 科研 / 证书 / 绩点四线拆解</li>
-            <li>用 HTML + Tailwind 独立制作并迭代个人在线简历</li>
-            <li>本页即为最新版本——技术学习成果的即时应用</li>
+            <li>把大学四年拆分为竞赛、科研、绩点、证书几条主线</li>
+            <li>使用HTML + Tailwind CSS完成这份网页简历</li>
           </ul>
           <div class="stack"><i>HTML</i><i>Tailwind CSS</i><i>目标管理</i></div>
         </div>
-
-        <!-- 示例项目 4（待确认修改） -->
-        <div class="proj-card sample-card">
-          <div class="kicker">Study · 示例填充（待改）</div>
-          <h3>金融数据分析小练习（示例）</h3>
-          <p>请替换为你的真实练习或删除此卡片。</p>
-          <ul class="feat">
-            <li>用爬虫采集某公开金融数据并做简单可视化（示例）</li>
-            <li>撰写一页数据小结，练习「数据 → 结论」表达（示例）</li>
-          </ul>
-          <div class="stack"><i>Python</i><i>示例标签</i></div>
-        </div>
-
       </div>
     </section>
-
     <!-- 04 保研路线图（基于真实目标的规划展示） -->
     <section class="main-sec reveal" id="roadmap">
       <div class="main-head">
@@ -731,17 +615,17 @@ footer{
           <div class="rm-step">
             <div class="yr">大一 · 打底</div>
             <b>绩点 + 英语 + 编程入门</b>
-            <span>专业课保高绩点；CET-4 通过并启动 IELTS 长线；完成 Python 爬虫与游戏项目。</span>
+            <span>专业课保高绩点；CET‑4 通过并启动 IELTS 长线；完成 Python 爬虫与游戏项目。</span>
           </div>
           <div class="rm-step">
             <div class="yr">大二 · 入场</div>
-            <b>竞赛 + 科研启蒙</b>
-            <span>参加学科竞赛（数学建模 / 挑战杯等）；进入老师课题打下手，积累研究经历。</span>
+            <b>竞赛 + 尝试接触科研入门</b>
+            <span>参加学科竞赛（数学建模 / 挑战杯等）；争取跟着老师做简单课题，积累研究经历。</span>
           </div>
           <div class="rm-step">
             <div class="yr">大三 · 攻坚</div>
             <b>论文 + 实习 + IELTS 出分</b>
-            <span>产出金融法交叉方向的研究成果；争取券商 / 律所金融部实习；语言成绩达标。</span>
+            <span>争取产出金融法相关的研究内容；争取券商 / 律所金融部实习；语言成绩达标。</span>
           </div>
           <div class="rm-step">
             <div class="yr">大四 · 冲刺</div>
@@ -751,22 +635,17 @@ footer{
         </div>
       </div>
     </section>
-
   </main>
 </div>
-
 <footer>
-  <span>甄智宇 · 个人简历 —— 感谢您花时间阅读</span>
-  <span>最后更新：2026-09-03</span>
+  <span>甄智宇｜个人网页简历｜最后更新 2026‑09‑15</span>
 </footer>
-
 <!-- 证书灯箱 -->
 <div class="lightbox" id="lightbox" onclick="closeLb()">
   <span class="close" onclick="closeLb()">×</span>
   <img id="lbImg" src="" alt="证书大图" />
   <div class="cap" id="lbCap"></div>
 </div>
-
 <script>
 /* ---------- 入场动画 ---------- */
 var io = new IntersectionObserver(function (entries) {
@@ -775,7 +654,6 @@ var io = new IntersectionObserver(function (entries) {
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-
 /* ---------- 技能条填充 ---------- */
 var bio = new IntersectionObserver(function (entries) {
   entries.forEach(function (e) {
@@ -788,7 +666,6 @@ var bio = new IntersectionObserver(function (entries) {
   });
 }, { threshold: 0.3 });
 document.querySelectorAll('.side-card').forEach(function (el) { bio.observe(el); });
-
 /* ---------- 证书灯箱 ---------- */
 var lb = document.getElementById('lightbox');
 var lbImg = document.getElementById('lbImg');

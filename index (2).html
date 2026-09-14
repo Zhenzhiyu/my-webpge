@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>甄智宇 · 个人简历 | 金融学 × 金融法方向</title>
+<meta name="description" content="甄智宇个人在线简历——河南财经政法大学金融学本科在读，目标保研中国政法大学金融法方向。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316233A'/%3E%3Ctext x='16' y='22' font-size='14' font-family='serif' fill='%23C9A24B' text-anchor='middle'%3E甄%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   甄智宇 · 个人简历
+   风格：墨蓝 × 鎏金 · 编辑部制版风（Editorial Ink & Gold）
+   说明：图片 photo.jpg / picture1.jpg / picture2.jpg 与本文件
+         放在同一文件夹即可自动显示；缺失时显示占位。
+   ============================================================ */
+:root{
+  --ink:#16233A;        /* 墨蓝主色 */
+  --ink-deep:#0E1728;   /* 更深的墨蓝 */
+  --ink-soft:#3D4C66;   /* 柔和墨蓝文字 */
+  --paper:#F6F4EE;      /* 米纸底色 */
+  --card:#FFFFFF;
+  --gold:#B9902E;       /* 鎏金主点缀 */
+  --gold-light:#D9B45C;
+  --gold-pale:#F3E9D2;
+  --line:#DED8CB;       /* 细分隔线 */
+  --muted:#7A776E;
+  --serif:"Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-size-adjust:100%;
+}
+/* 纸张细纹 */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle,rgba(22,35,58,.035) 1px,transparent 1px);
+  background-size:26px 26px;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+/* ---------- 顶部导航 ---------- */
+.topnav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(14,23,40,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(217,180,92,.35);
+}
+.topnav .in{
+  max-width:1180px;margin:0 auto;padding:0 20px;
+  min-height:52px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.brand{font-family:var(--serif);font-weight:700;color:#F5EFE0;letter-spacing:2px;display:flex;align-items:center;gap:9px;font-size:15px}
+.brand .seal{
+  width:22px;height:22px;border:1px solid var(--gold-light);color:var(--gold-light);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:12px;border-radius:3px;
+}
+.navlinks{display:flex;gap:4px;flex-wrap:wrap}
+.navlinks a{
+  color:#C9CEDA;font-size:13px;padding:5px 12px;border-radius:999px;
+  transition:all .2s;
+}
+.navlinks a:hover{color:var(--gold-light);background:rgba(217,180,92,.12)}
+.print-btn{
+  background:transparent;border:1px solid var(--gold);color:var(--gold-light);
+  font-size:12.5px;padding:5px 14px;border-radius:999px;cursor:pointer;
+  font-family:var(--sans);transition:all .2s;letter-spacing:1px;
+}
+.print-btn:hover{background:var(--gold);color:#0E1728}
+/* ---------- 头部 ---------- */
+.hero{
+  position:relative;background:
+    radial-gradient(1100px 480px at 78% -10%,rgba(185,144,46,.28),transparent 60%),
+    linear-gradient(160deg,var(--ink-deep) 0%,var(--ink) 58%,#1D2E4E 100%);
+  color:#F1ECDF;overflow:hidden;
+}
+.hero::after{ /* 底部金色细线 */
+  content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light),var(--gold));
+}
+.hero .in{
+  position:relative;max-width:1180px;margin:0 auto;padding:58px 20px 48px;
+  display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;
+}
+.avatar-wrap{position:relative;width:148px;height:148px}
+.avatar-ring{
+  position:absolute;inset:-8px;border:1px solid rgba(217,180,92,.55);
+  border-radius:50%;transform:rotate(8deg);
+}
+.avatar{
+  width:148px;height:148px;border-radius:50%;overflow:hidden;
+  border:2px solid var(--gold-light);background:#223250;
+  display:flex;align-items:center;justify-content:center;
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.avatar .fallback{font-family:var(--serif);font-size:52px;color:var(--gold-light);font-weight:700}
+.hero-name-row{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.hero h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(34px,5.2vw,54px);letter-spacing:6px;color:#F8F3E5;
+}
+.hero .en-name{
+  font-size:13px;letter-spacing:5px;color:var(--gold-light);
+  text-transform:uppercase;font-weight:500;
+}
+.hero .tagline{
+  margin-top:14px;font-size:clamp(15px,2vw,17.5px);color:#D8DCE4;max-width:620px;
+}
+.hero .tagline b{color:var(--gold-light);font-weight:700}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.chip{
+  border:1px solid rgba(217,180,92,.45);color:#EDE4CC;
+  font-size:12.5px;padding:4px 14px;border-radius:999px;letter-spacing:1px;
+  background:rgba(217,180,92,.07);
+}
+.hero-contact{display:flex;gap:26px;flex-wrap:wrap;margin-top:24px;font-size:14px;color:#C6CBD6}
+.hero-contact span{display:inline-flex;align-items:center;gap:8px}
+.hero-contact svg{width:15px;height:15px;stroke:var(--gold-light);fill:none;stroke-width:1.8}
+/* ---------- 主体两栏 ---------- */
+.layout{
+  position:relative;z-index:1;
+  max-width:1180px;margin:0 auto;padding:44px 20px 20px;
+  display:grid;grid-template-columns:330px 1fr;gap:34px;align-items:start;
+}
+/* ---------- 通用区块 ---------- */
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:6px;
+  padding:24px 22px;margin-bottom:26px;
+  box-shadow:0 1px 0 rgba(22,35,58,.04);
+}
+.side-card.dark{background:var(--ink-deep);border-color:#26334D;color:#E9E4D6}
+.sec-title{
+  font-family:var(--serif);font-size:17px;font-weight:700;letter-spacing:3px;
+  display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--ink);
+}
+.sec-title::before{
+  content:"";width:5px;height:18px;background:var(--gold);border-radius:1px;flex:none;
+}
+.side-card.dark .sec-title{color:#F5EFE0}
+/* ---------- 侧栏：教育 ---------- */
+.edu-school{font-family:var(--serif);font-weight:700;font-size:16.5px;line-height:1.5}
+.edu-meta{font-size:13.5px;color:var(--ink-soft);margin-top:4px}
+.edu-goal{
+  margin-top:14px;background:var(--gold-pale);border-left:3px solid var(--gold);
+  padding:10px 12px;font-size:13px;color:#6B5314;border-radius:0 4px 4px 0;
+}
+.side-card.dark .edu-school{color:#F5EFE0}
+.side-card.dark .edu-meta{color:#AEB6C6}
+.side-card.dark .edu-goal{background:rgba(217,180,92,.12);color:#E8D9AE}
+/* ---------- 侧栏：技能条 ---------- */
+.skill{margin-bottom:14px}
+.skill:last-child{margin-bottom:0}
+.skill .row{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:6px}
+.skill .row .lvl{color:var(--gold);font-size:12px;letter-spacing:1px}
+.bar{height:5px;background:#ECE7DA;border-radius:99px;overflow:hidden}
+.bar i{
+  display:block;height:100%;width:0;border-radius:99px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  transition:width 1.1s cubic-bezier(.25,.7,.3,1);
+}
+.lang-item{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.lang-item:last-child{border-bottom:none}
+.lang-item .status{color:var(--gold);font-size:12.5px}
+/* ---------- 侧栏：证书 ---------- */
+.cert-list{list-style:none}
+.cert-list li{
+  display:flex;gap:10px;font-size:13.5px;padding:8px 0;
+  border-bottom:1px dashed var(--line);align-items:flex-start;
+}
+.cert-list li:last-child{border-bottom:none}
+.cert-list .medal{
+  flex:none;width:26px;height:26px;border-radius:50%;margin-top:1px;
+  border:1px solid var(--gold);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-size:13px;
+}
+.cert-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.cert-thumbs .thumb{
+  position:relative;border:1px solid var(--line);border-radius:5px;overflow:hidden;cursor:pointer;
+  aspect-ratio:4/3;background:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .2s, box-shadow .2s;
+}
+.cert-thumbs .thumb:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(22,35,58,.12)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb .ph{font-size:12px;color:#9A8241;text-align:center;line-height:1.5}
+.thumb .zoom{
+  position:absolute;right:6px;bottom:6px;width:22px;height:22px;border-radius:50%;
+  background:rgba(22,35,58,.75);color:#EFE6C8;font-size:12px;
+  display:flex;align-items:center;justify-content:center;
+}
+/* ---------- 侧栏：兴趣爱好 ---------- */
+.hobby{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line)}
+.hobby:last-child{border-bottom:none}
+.hobby .ico{
+  flex:none;width:34px;height:34px;border-radius:50%;
+  border:1px solid rgba(217,180,92,.6);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+.hobby b{font-size:14px;display:block}
+.hobby span{font-size:12.5px;color:var(--muted)}
+/* ---------- 主栏 ---------- */
+.main-sec{margin-bottom:38px}
+.main-head{
+  display:flex;align-items:baseline;gap:14px;
+  border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:24px;
+}
+.main-head .no{
+  font-family:var(--serif);color:var(--gold);font-weight:900;font-size:15px;letter-spacing:1px;
+}
+.main-head h2{font-family:var(--serif);font-size:clamp(21px,3vw,26px);letter-spacing:4px}
+.main-head .sub{font-size:11px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-left:auto}
+/* 自我陈述 */
+.statement{
+  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
+  border-radius:0 6px 6px 0;padding:22px 26px;font-size:15px;color:#333A46;
+}
+.statement p+p{margin-top:10px}
+/* ---------- 时间线 ---------- */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{
+  content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
+  background:linear-gradient(180deg,var(--gold) 0%,var(--line) 100%);
+}
+.tl-item{position:relative;padding-bottom:28px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-26px;top:7px;width:11px;height:11px;
+  border-radius:50%;background:var(--card);border:2px solid var(--gold);
+  box-shadow:0 0 0 3px var(--paper);
+}
+.tl-item.hl::before{background:var(--gold)}
+.tl-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tl-head h3{font-family:var(--serif);font-size:16.5px;letter-spacing:1px}
+.tl-head .time{
+  font-size:12px;color:var(--gold);letter-spacing:1px;white-space:nowrap;
+  border:1px solid rgba(185,144,46,.4);padding:2px 10px;border-radius:999px;
+}
+.tl-org{font-size:13px;color:var(--muted);margin:3px 0 8px}
+.tl-points{list-style:none}
+.tl-points li{
+  position:relative;font-size:14px;color:#3A4150;padding-left:16px;margin-bottom:5px;
+}
+.tl-points li::before{
+  content:"";position:absolute;left:2px;top:11px;width:5px;height:1.5px;background:var(--gold);
+}
+.tl-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tl-tags i{
+  font-style:normal;font-size:11.5px;color:var(--ink-soft);
+  background:#EFECE3;border:1px solid var(--line);padding:2px 10px;border-radius:3px;letter-spacing:.5px;
+}
+/* ---------- 项目卡片 ---------- */
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.proj-card{
+  background:var(--card);border:1px solid var(--line);border-radius:6px;
+  padding:22px;position:relative;overflow:hidden;
+  transition:transform .22s, box-shadow .22s;
+}
+.proj-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(22,35,58,.10)}
+.proj-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),transparent 70%);
+}
+.proj-card .kicker{
+  font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:8px;
+}
+.proj-card h3{font-family:var(--serif);font-size:17px;margin-bottom:8px}
+.proj-card p{font-size:13.5px;color:#4A5162;margin-bottom:12px}
+.proj-card .feat{list-style:none;margin-bottom:12px}
+.proj-card .feat li{
+  font-size:13px;color:#3A4150;padding:3px 0 3px 18px;position:relative;
+}
+.proj-card .feat li::before{
+  content:"◆";position:absolute;left:0;top:3px;font-size:9px;color:var(--gold);
+}
+.proj-card .stack{display:flex;gap:8px;flex-wrap:wrap}
+.proj-card .stack i{
+  font-style:normal;font-size:11.5px;background:var(--ink);color:#EFE6C8;
+  padding:2px 10px;border-radius:2px;letter-spacing:1px;
+}
+/* ---------- 保研路线图 ---------- */
+.roadmap{
+  background:linear-gradient(150deg,var(--ink-deep),var(--ink) 70%,#20304F);
+  border-radius:8px;padding:30px 28px;color:#E8E3D5;position:relative;overflow:hidden;
+}
+.roadmap::after{
+  content:"研";position:absolute;right:-14px;bottom:-34px;
+  font-family:var(--serif);font-size:170px;color:rgba(217,180,92,.07);font-weight:900;
+}
+.roadmap h3{font-family:var(--serif);font-size:18px;letter-spacing:3px;color:#F5EFE0;margin-bottom:6px}
+.roadmap .rm-sub{font-size:12.5px;color:#A9B1C2;letter-spacing:1px;margin-bottom:22px}
+.rm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative;z-index:1}
+.rm-step{border-top:2px solid rgba(217,180,92,.35);padding-top:12px}
+.rm-step .yr{
+  font-size:12px;color:var(--gold-light);letter-spacing:2px;margin-bottom:6px;
+  display:flex;align-items:center;gap:8px;
+}
+.rm-step .yr::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
+.rm-step b{font-size:14.5px;display:block;margin-bottom:5px;color:#F1ECDE;font-weight:700}
+.rm-step span{font-size:12.5px;color:#B4BAC8;line-height:1.7;display:block}
+/* ---------- 页脚 ---------- */
+footer{
+  max-width:1180px;margin:0 auto;padding:26px 20px 40px;
+  border-top:1px solid var(--line);display:flex;justify-content:space-between;
+  font-size:12.5px;color:var(--muted);flex-wrap:wrap;gap:8px;position:relative;z-index:1;
+}
+/* ---------- 灯箱 ---------- */
+.lightbox{
+  position:fixed;inset:0;background:rgba(14,23,40,.9);z-index:100;
+  display:none;align-items:center;justify-content:center;flex-direction:column;padding:30px;
+}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(880px,92vw);max-height:78vh;border:2px solid var(--gold-light);border-radius:6px;background:#fff}
+.lightbox .cap{color:#D9CBA4;font-size:13.5px;margin-top:14px;letter-spacing:2px}
+.lightbox .close{
+  position:absolute;top:22px;right:28px;font-size:26px;color:#EFE6C8;cursor:pointer;line-height:1;
+}
+/* ---------- 入场动画 ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1!important;transform:none}
+/* ---------- 响应式 ---------- */
+@media(max-width:960px){
+  .layout{grid-template-columns:1fr;gap:8px}
+  .hero .in{grid-template-columns:1fr;justify-items:center;text-align:center;padding:44px 20px 40px}
+  .hero .tagline{margin-left:auto;margin-right:auto}
+  .chips,.hero-contact{justify-content:center}
+  .hero-name-row{justify-content:center}
+  .rm-grid{grid-template-columns:1fr 1fr}
+  .proj-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .navlinks{display:none}
+  .rm-grid{grid-template-columns:1fr}
+  .main-head .sub{display:none}
+}
+/* ---------- 打印 ---------- */
+@media print{
+  body{background:#fff}
+  body::before,.topnav,.print-btn,.lightbox,.zoom{display:none!important}
+  .hero .in{padding:26px 0}
+  .layout{grid-template-columns:1fr 2fr;padding:12px 0}
+  .side-card,.proj-card,.statement{box-shadow:none;break-inside:avoid}
+  .tl-item,.proj-card,.rm-step{break-inside:avoid}
+  .roadmap{background:var(--ink)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .reveal{opacity:1!important;transform:none!important}
+  .bar i{transition:none}
+}
+</style>
+</head>
+<body>
+<!-- ============ 顶部导航 ============ -->
+<nav class="topnav">
+  <div class="in">
+    <div class="brand"><span class="seal">甄</span>甄智宇 · 个人简历</div>
+    <div class="navlinks">
+      <a href="#profile">自述</a>
+      <a href="#timeline">经历</a>
+      <a href="#projects">项目</a>
+      <a href="#roadmap">路线图</a>
+      <a href="#skills">技能</a>
+      <a href="#certs">证书</a>
+    </div>
+    <button class="print-btn" onclick="window.print()">打印 / 存 PDF</button>
+  </div>
+</nav>
+<!-- ============ 头部 ============ -->
+<header class="hero">
+  <div class="in">
+    <div class="avatar-wrap reveal">
+      <div class="avatar-ring"></div>
+      <div class="avatar">
+        <!-- 照片：将 photo.jpg 放在同目录即自动显示 -->
+        <img src="photo.jpg" alt="甄智宇证件照" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="fallback" style="display:none">甄</div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.1s">
+      <div class="hero-name-row">
+        <h1>甄智宇</h1>
+        <span class="en-name">Zhen Zhiyu</span>
+      </div>
+      <p class="tagline">
+        河南财经政法大学2026级金融学大一。我希望未来往金融与法律交叉方向发展，所以除专业课之外，我自学Python和网页制作，想掌握一点数据处理能力，为之后的学习做准备。
+      </p>
+      <div class="chips">
+        <span class="chip">金融学</span>
+        <span class="chip">金融法方向</span>
+        <span class="chip">Python / 数据获取</span>
+      </div>
+      <div class="hero-contact">
+        <span>
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+          3294995700@qq.com
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" /></svg>
+          18226201828
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
+          河南 · 郑州
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ============ 主体 ============ -->
+<div class="layout">
+  <!-- ======== 左侧栏 ======== -->
+  <aside>
+    <!-- 教育背景（真实信息，完整保留） -->
+    <section class="side-card dark reveal" id="edu">
+      <h2 class="sec-title">教育背景</h2>
+      <div class="edu-school">河南财经政法大学</div>
+      <div class="edu-meta">金融学院 · 金融学（本科在读）</div>
+      <div class="edu-meta">2026.09 — 至今 · 大一</div>
+      <div class="edu-goal">
+        目标：保研至 <b>中国政法大学 · 金融法方向</b><br />
+        主线：专业课绩点 + 英语能力 + 科研数据技能
+      </div>
+    </section>
+    <!-- 专业技能（真实信息，完整保留） -->
+    <section class="side-card reveal" id="skills">
+      <h2 class="sec-title">专业技能</h2>
+      <div class="skill">
+        <div class="row"><span>Python（网络爬虫基础）</span><span class="lvl">入门+</span></div>
+        <div class="bar"><i data-w="55"></i></div>
+      </div>
+      <div class="skill">
+        <div class="row"><span>HTML / Tailwind CSS</span><span class="lvl">入门</span></div>
+        <div class="bar"><i data-w="40"></i></div>
+      </div>
+      <div class="skill">
+        <div class="row"><span>金融专业基础（货币银行学等）</span><span class="lvl">夯实中</span></div>
+        <div class="bar"><i data-w="45"></i></div>
+      </div>
+      <div class="skill">
+        <div class="row"><span>学业规划 / 复盘方法论</span><span class="lvl">熟练</span></div>
+        <div class="bar"><i data-w="75"></i></div>
+      </div>
+      <h2 class="sec-title" style="margin-top:24px">语言能力</h2>
+      <div class="lang-item"><span>普通话</span><span class="status">母语</span></div>
+      <div class="lang-item"><span>英语 · CET-4</span><span class="status">备考中</span></div>
+      <div class="lang-item"><span>英语 · IELTS</span><span class="status">长线备考</span></div>
+    </section>
+    <!-- 证书（真实信息，完整保留；图片可后补） -->
+    <section class="side-card reveal" id="certs">
+      <h2 class="sec-title">竞赛与证书</h2>
+      <ul class="cert-list">
+        <li>
+          <span class="medal">荣</span>
+          <div>
+            <b style="font-size:14px">RST 竞赛训练营 · 筛选赛参与证书</b>
+          </div>
+        </li>
+      </ul>
+      <!-- 证书图片：picture1.jpg / picture2.jpg 放同目录即显示，点击可放大 -->
+      <div class="cert-thumbs">
+        <div class="thumb" onclick="openLb('picture1.jpg','RST 竞赛训练营 · 证书 1')">
+          <img src="picture1.jpg" alt="证书1" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 1<br />(picture1.jpg)</div>')" />
+          <span class="zoom">⤢</span>
+        </div>
+        <div class="thumb" onclick="openLb('picture2.jpg','RST 竞赛训练营 · 证书 2')">
+          <img src="picture2.jpg" alt="证书2" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;ph&quot;>证书图 2<br />(picture2.jpg)</div>')" />
+          <span class="zoom">⤢</span>
+        </div>
+      </div>
+    </section>
+    <!-- 兴趣爱好（真实信息，完整保留） -->
+    <section class="side-card reveal">
+      <h2 class="sec-title">兴趣与爱好</h2>
+      <div class="hobby">
+        <span class="ico">🏓</span>
+        <div><b>乒乓球 / 羽毛球</b><span>常年坚持的两大运动，课余解压与社交方式</span></div>
+      </div>
+      <div class="hobby">
+        <span class="ico">📖</span>
+        <div><b>金融 × 法律交叉阅读</b><span>关注金融监管、金融法案例与监管动态</span></div>
+      </div>
+      <div class="hobby">
+        <span class="ico">💻</span>
+        <div><b>自学编程</b><span>从爬虫到小游戏开发，用项目驱动学习</span></div>
+      </div>
+      <div class="hobby">
+        <span class="ico">🗂</span>
+        <div><b>规划与复盘</b><span>习惯把目标拆成路线图，定期回顾校准</span></div>
+      </div>
+    </section>
+  </aside>
+  <!-- ======== 右侧主栏 ======== -->
+  <main>
+    <!-- 01 自我陈述 -->
+    <section class="main-sec reveal" id="profile">
+      <div class="main-head">
+        <span class="no">壹</span><h2>自我陈述</h2><span class="sub">Profile</span>
+      </div>
+      <div class="statement">
+        <p>
+          我是甄智宇，2026级金融学大一。刚入学我就定下目标，希望未来可以保研到中国政法大学金融法方向。
+        </p>
+        <p>
+          金融和法律结合的方向，不光要学好本专业，还需要逻辑思维和处理数据的本事。所以我现在同时推进几件事：学好课内专业课；课外自学Python，写过小游戏，也动手做了这个个人网页；同时准备四级，长线规划雅思。大一先一点点积累，为之后做准备。
+        </p>
+      </div>
+    </section>
+    <!-- 02 经历时间线 -->
+    <section class="main-sec reveal" id="timeline">
+      <div class="main-head">
+        <span class="no">贰</span><h2>经历时间线</h2><span class="sub">Experience</span>
+      </div>
+      <div class="timeline">
+        <!-- 真实经历 1：RST 竞赛训练营 -->
+        <div class="tl-item hl">
+          <div class="tl-head">
+            <h3>RST 竞赛训练营 · 参训学员</h3>
+            <span class="time">2026 秋</span>
+          </div>
+          <div class="tl-org">训练营选拔 · 获筛选赛参与证书</div>
+          <ul class="tl-points">
+            <li>通过训练营筛选，跟着课程学习编程、算法基础，完成全部课程任务。</li>
+            <li>独立做完附加题坦克大战小游戏，我还在地图里加入自己名字缩写做标记。</li>
+            <li>这是我第一次把学到的代码写成能直接运行的程序，也体会到动手做项目来巩固学习的方式。</li>
+          </ul>
+          <div class="tl-tags"><i>Python</i><i>Pygame</i><i>项目实战</i></div>
+        </div>
+        <!-- 真实经历 2：Python 爬虫项目 -->
+        <div class="tl-item">
+          <div class="tl-head">
+            <h3>Python 网页爬虫 · 学习项目</h3>
+            <span class="time">2026</span>
+          </div>
+          <div class="tl-org">自主学习 · 服务金融法方向科研数据收集</div>
+          <ul class="tl-points">
+            <li>自学网页爬虫相关内容，练习网页请求、内容解析、保存数据的基础操作。</li>
+            <li>尝试抓取公开网页数据并做简单整理。</li>
+            <li>希望以后做金融相关研究时，可以用上这项工具，把金融专业和代码能力结合起来。</li>
+          </ul>
+          <div class="tl-tags"><i>Requests</i><i>数据解析</i></div>
+        </div>
+        <!-- 真实经历 3：学业规划 -->
+        <div class="tl-item">
+          <div class="tl-head">
+            <h3>本科四年学业规划 · 自主立项</h3>
+            <span class="time">2026</span>
+          </div>
+          <div class="tl-org">个人长期规划项目</div>
+          <ul class="tl-points">
+            <li>围绕保研目标，我给自己做了大学四年的简单规划，拆分了绩点、英语、竞赛、科研、证书这几个方向。</li>
+            <li>整理了适合本科生参与的竞赛、科研渠道，按学期列好要完成的事情。</li>
+            <li>会定期回头复盘调整计划，避免只是空想。</li>
+          </ul>
+          <div class="tl-tags"><i>目标管理</i><i>路线拆解</i><i>复盘习惯</i></div>
+        </div>
+      </div>
+    </section>
+    <!-- 03 项目作品 -->
+    <section class="main-sec reveal" id="projects">
+      <div class="main-head">
+        <span class="no">叁</span><h2>项目作品</h2><span class="sub">Projects</span>
+      </div>
+      <div class="proj-grid">
+        <!-- 真实项目 1：坦克大战 -->
+        <div class="proj-card">
+          <div class="kicker">Game · 训练营附加题</div>
+          <h3>坦克大战（Python · Pygame）</h3>
+          <p>独立写的坦克对战小游戏。</p>
+          <ul class="feat">
+            <li>WASD操控玩家，敌方AI自动移动射击</li>
+            <li>实现子弹发射、砖墙碰撞逻辑</li>
+            <li>血量统计和游戏胜负判定</li>
+            <li>地图加入个人缩写作为标记</li>
+          </ul>
+          <div class="stack"><i>Python</i><i>Pygame</i><i>碰撞检测</i><i>AI 行为</i></div>
+        </div>
+        <!-- 真实项目 2：爬虫 -->
+        <div class="proj-card">
+          <div class="kicker">Data · 学习项目</div>
+          <h3>Python 网页爬虫（数据获取实践）</h3>
+          <p>练习数据采集整理，为之后做金融相关的学习打基础。</p>
+          <ul class="feat">
+            <li>练习网页请求、解析、数据存储整套基础操作</li>
+            <li>对公开网页数据做简单采集和整理</li>
+          </ul>
+          <div class="stack"><i>Python</i><i>Requests</i><i>数据清洗</i></div>
+        </div>
+        <!-- 真实项目 3：学业规划 + 本简历站 -->
+        <div class="proj-card">
+          <div class="kicker">Plan · 个人长期项目</div>
+          <h3>保研路线规划 &amp; 个人简历网站</h3>
+          <p>我把自己的大学规划整理出来，同时用刚学会的HTML+Tailwind写了这份网页简历，这个页面就是我的练习作品。</p>
+          <ul class="feat">
+            <li>把大学四年拆分为竞赛、科研、绩点、证书几条主线</li>
+            <li>使用HTML + Tailwind CSS完成这份网页简历</li>
+          </ul>
+          <div class="stack"><i>HTML</i><i>Tailwind CSS</i><i>目标管理</i></div>
+        </div>
+      </div>
+    </section>
+    <!-- 04 保研路线图（基于真实目标的规划展示） -->
+    <section class="main-sec reveal" id="roadmap">
+      <div class="main-head">
+        <span class="no">肆</span><h2>保研路线图</h2><span class="sub">Roadmap</span>
+      </div>
+      <div class="roadmap">
+        <h3>目标：中国政法大学 · 金融法方向</h3>
+        <div class="rm-sub">从大一出发，四步走到推免 —— 本路线图可随实际进展持续更新</div>
+        <div class="rm-grid">
+          <div class="rm-step">
+            <div class="yr">大一 · 打底</div>
+            <b>绩点 + 英语 + 编程入门</b>
+            <span>专业课保高绩点；CET‑4 通过并启动 IELTS 长线；完成 Python 爬虫与游戏项目。</span>
+          </div>
+          <div class="rm-step">
+            <div class="yr">大二 · 入场</div>
+            <b>竞赛 + 尝试接触科研入门</b>
+            <span>参加学科竞赛（数学建模 / 挑战杯等）；争取跟着老师做简单课题，积累研究经历。</span>
+          </div>
+          <div class="rm-step">
+            <div class="yr">大三 · 攻坚</div>
+            <b>论文 + 实习 + IELTS 出分</b>
+            <span>争取产出金融法相关的研究内容；争取券商 / 律所金融部实习；语言成绩达标。</span>
+          </div>
+          <div class="rm-step">
+            <div class="yr">大四 · 冲刺</div>
+            <b>推免申请</b>
+            <span>整理四年成果，向中国政法大学金融法方向提交推免申请。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<footer>
+  <span>甄智宇｜个人网页简历｜最后更新 2026‑09‑15</span>
+</footer>
+<!-- 证书灯箱 -->
+<div class="lightbox" id="lightbox" onclick="closeLb()">
+  <span class="close" onclick="closeLb()">×</span>
+  <img id="lbImg" src="" alt="证书大图" />
+  <div class="cap" id="lbCap"></div>
+</div>
+<script>
+/* ---------- 入场动画 ---------- */
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+/* ---------- 技能条填充 ---------- */
+var bio = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.bar i').forEach(function (b) {
+        b.style.width = (b.getAttribute('data-w') || 50) + '%';
+      });
+      bio.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.side-card').forEach(function (el) { bio.observe(el); });
+/* ---------- 证书灯箱 ---------- */
+var lb = document.getElementById('lightbox');
+var lbImg = document.getElementById('lbImg');
+var lbCap = document.getElementById('lbCap');
+function openLb(src, cap) {
+  lbImg.src = src; lbCap.textContent = cap;
+  lbImg.onerror = function () { lbCap.textContent = '未找到图片：' + src + '（将图片放入本文件所在文件夹即可显示）'; };
+  lb.classList.add('open');
+}
+function closeLb() { lb.classList.remove('open'); }
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+</script>
+</body>
+</html>
